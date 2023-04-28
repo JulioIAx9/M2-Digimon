@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon</title>
+    <!--logo y nombre para la pestaña del navegador XD-->
+    <link rel="shortcut icon" href="img/icono digimon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Mi boton ancla-->
+  <a name="upa"></a>
+  <!--Botones de busqueda-->
+        <h1>Lista de Digimon</h1>
+        <div>
+          <label for="search-input"></label>
+          <input type="text" id="search-input" class="search-input" />
+          <button id="search-button" class="search-button">Buscar</button>
+        </div>
+        <div>
+          <h2>Filtrar por nivel:</h2>
+          
+          <button class="filter-btn" data-level="In Training">In Training</button>
+          <button class="filter-btn" data-level="Armor">Armor</button>
+          <button class="filter-btn" data-level="Fresh">Fresh</button>        
+          <button class="filter-btn" data-level="Rookie">Rookie</button>
+          <button class="filter-btn" data-level="Champion">Champion</button>
+          <button class="filter-btn" data-level="Ultimate">Ultimate</button>
+          <button class="filter-btn" data-level="Mega">Mega</button>
+        </div>
+        <div class="card-container"></div>
+        <!--la necesaria referencia al funcionamiento de nuestra web-->
+        <script src="scrip.js"></script>  
+  <a href="#upa">vamos al inicio</a>
+</body>
+<footer>
+
+  <h3>Desarrollado por Julio Rojas</h3>
+  <!--Invitacion a conocer-->
+  <a href="https://github.com/JulioIAx9/" target="_blank" >Visítame</a>
+</footer>
+</html>

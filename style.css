@@ -1,0 +1,72 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  h1, h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-30px);
+  }
+  
+  .card-img {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-img img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  .card-info {
+    padding: 1rem;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .card-img {
+      height: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .card-img {
+      height: 150px;
+    }
+  }
+  body {
+    background-image: url(img/Digimon_vpet_20th_anniversary_by_Sinobali.png);
+    background-repeat: auto;
+    background-size: cover;
+    background-position: unset;
+  }
